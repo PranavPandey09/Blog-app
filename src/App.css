@@ -1,0 +1,124 @@
+:root {
+  --background: #2e2e2e; /* Dark grey background */
+  --text: #ffffff; /* White text */
+  --highlight: #4caf50; /* Green highlight color */
+  --button-bg: #4e4e4e; /* Button grey background */
+  --button-text: #ffffff; /* Button text color */
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: 'Roboto', sans-serif;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Sections */
+section {
+  padding: 4rem 2rem;
+  background-color: var(--background); /* Matching section background */
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: rgb(108, 6, 112); /* Green color for headings */
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+/* Buttons, Inputs, and Textareas */
+button, input, textarea {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: 1px solid var(--highlight);
+  border-radius: 5px;
+  padding: 0.7rem 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  width: 100%;
+}
+
+button:hover, input:hover, textarea:hover {
+  background-color: var(--highlight); /* Button hover effect */
+  color: var(--text);
+  cursor: pointer;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: var(--highlight); /* Green links */
+}
+
+a:hover {
+  color: #81c784; /* Lighter green on hover */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #fff9f9; /* Slightly darker grey footer */
+  color: var(--text);
+  font-size: 1.050rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  section {
+    padding: 3rem 1.5rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 2.5rem 1.2rem;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.25rem;
+  }
+  
+  button, input, textarea {
+    font-size: 0.875rem;
+  }
+  
+  section {
+    padding: 2rem 1rem;
+  }
+}
